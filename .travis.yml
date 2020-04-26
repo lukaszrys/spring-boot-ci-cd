@@ -10,4 +10,4 @@ before_install:
 
 script:
   - ./mvnw clean install
-  - ./mvnw heroku:deploy -P deploy-heroku
+  - ./mvnw heroku:deploy -P deploy-heroku,deploy-docker
