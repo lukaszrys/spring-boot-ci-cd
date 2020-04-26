@@ -32,6 +32,17 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
       </plugin>
+    </plugins>
+  </build>
+
+  <profiles>
+<profile>
+  <id>deploy-docker</id>
+  <properties>
+    <maven.deploy.skip>true</maven.deploy.skip>
+  </properties>
+  <build>
+    <plugins>
       <plugin>
         <groupId>com.spotify</groupId>
         <artifactId>dockerfile-maven-plugin</artifactId>
@@ -55,6 +66,8 @@
       </plugin>
     </plugins>
   </build>
+</profile>
+  </profiles>
 
 
 </project>
