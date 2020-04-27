@@ -4,7 +4,7 @@ import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CiCdApplicationTest {
+public class CiCdApplicationTest {
 
     @Test
     public void contextLoads() {
